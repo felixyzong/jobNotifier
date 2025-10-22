@@ -1,6 +1,7 @@
 import json
 from pathlib import Path
 from jobFetchAlgolia import fetch_algolia_jobs
+from jobFetchJson import fetch_script_json_jobs
 from jobFilter import filter_jobs
 
 CONFIG_FILE = Path("config.json")
@@ -30,6 +31,8 @@ def main():
         # Choose the fetching method
         if site["type"] == "algolia":
             jobs = fetch_algolia_jobs(site)
+        elif site["type"] == "script_json":
+            jobs = fetch_script_json_jobs(site)
         else:
             print(f"Unsupported site type: {site['type']}")
             continue

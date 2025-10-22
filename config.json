@@ -28,6 +28,24 @@
         "intern"
       ],
       "failedLastTime": false
+    },
+    {
+      "name": "Behaviour Interactive",
+      "type": "script_json",
+      "url": "https://www.bhvr.com/toronto/",
+      "base_url": "https://www.bhvr.com",
+      "include_keywords": [
+        "programmer",
+        "developer",
+        "engineer"
+      ],
+      "exclude_keywords": [
+        "senior",
+        "lead",
+        "director",
+        "principal"
+      ],
+      "failedLastTime": false
     }
   ]
 }
